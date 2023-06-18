@@ -14124,6 +14124,7 @@ const modals = () => {
 
     bindModal('.popup_engineer_btn', '.popup_engineer', '.popup_engineer .popup_close');
     bindModal('.phone_link', '.popup', '.popup .popup_close');
+    bindModal('.popup_calc_btn', '.popup_calc', '.popup_calc_close');
     // showModalByTime('.popup', 60000);
 };
 
@@ -14142,7 +14143,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-const tabs = (headerSelector, tabSelector, contentSelector, activeClass) => {
+const tabs = (headerSelector, tabSelector, contentSelector, activeClass, display = 'block') => {
     const header = document.querySelector(headerSelector),
           tab = document.querySelectorAll(tabSelector),
           content = document.querySelectorAll(contentSelector);
@@ -14158,7 +14159,7 @@ const tabs = (headerSelector, tabSelector, contentSelector, activeClass) => {
     }
 
     function showTabContent(i = 0) {
-        content[i].style.display = 'block';
+        content[i].style.display = display;
         tab[i].classList.add(activeClass);
     }
 
