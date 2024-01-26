@@ -287,7 +287,6 @@ textarea:focus {
 .header .contact_us_wrap {
   display: table-cell;
   vertical-align: middle;
-  line-height: 1.7;
 }
 
 .header .contact_us_wrap a {
@@ -587,6 +586,11 @@ textarea:focus {
 }
 
 /*Our works*/
+
+.container__works {
+    width: 1250px;
+}
+
 .works {
   padding: 5rem 0;
 }
@@ -5026,8 +5030,9 @@ img:not([src]) {
 
 .logo__right_buttons_wrap {
     display: table;
-    width: auto;
-    float: right
+    width: 170px;
+    height: 60px;
+    float: right;
 }
 
 .logo__right_buttons_but {
