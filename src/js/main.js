@@ -5,6 +5,7 @@ import forms from './modules/forms';
 import changeModalState from './modules/changeModalState';
 import timer from "./modules/timer";
 import images from "./modules/images";
+import animation from "./modules/animations";
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -19,5 +20,6 @@ window.addEventListener('DOMContentLoaded', () => {
     forms();
     timer('.container1', deadline);
     images();
+    animation();
     
 });
