@@ -393,14 +393,6 @@ textarea:focus {
 
 .glazing_block {
   display: inline-block;
-  transform: translate(0px, 150%);
-  opacity: 0;
-  transition: all 1.2s ease 0.2s;
-}
-
-.glazing_block.active {
-    transform: translate(0px, 0px);
-    opacity: 1;
 }
 
 .glazing_block img {
@@ -524,6 +516,10 @@ textarea:focus {
   color: #454545;
 }
 
+
+
+
+
 /*Decoration*/
 .decoration {
   padding: 8rem 0;
@@ -576,7 +572,15 @@ textarea:focus {
 }
 
 .decoration_content {
-  margin-top: 8rem;
+    margin-top: 8rem;
+    transform: translate(0px, 1%);
+    opacity: 0;
+    transition: all 1.2s ease 0.2s;
+}
+
+.decoration_content.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
 
 .decoration_content_material img {
@@ -613,6 +617,17 @@ textarea:focus {
   display: none;
 }
 
+.decoration_item {
+    transform: translate(0px, 150%);
+    opacity: 0;
+    transition: all 1.2s ease 0.2s;
+}
+
+.decoration_item.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
 /*Our works*/
 F
 .container__works {
@@ -621,6 +636,21 @@ F
 
 .works {
   padding: 5rem 0;
+}
+
+.works__wrapper {
+    transform: translate(0px, 150%);
+    opacity: 0;
+    transition: all 1.2s ease 0.2s;
+}
+
+.works__wrapper:last-child {
+    display: contents;
+}
+
+.works__wrapper.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
 
 .works a img {
@@ -836,11 +866,7 @@ F
 
 .footer {
   padding: 4rem 0;
-}
-
-.footer_logo {
-  width: 170px;
-  height: 60px;
+  background-image: -webkit-linear-gradient(top, rgb(37, 44, 53), rgba(72, 83, 88, 0.7));
 }
 
 .footer .copyright p {
@@ -3061,34 +3087,34 @@ img:not([src]) {
     margin-bottom: 40px
 }
 
-.works .t-col_2:nth-child(6n+1) {
+.works .boosttrap-col_2:nth-child(6n+1) {
     clear: left
 }
 
 @media screen and (max-width: 960px) {
-    .works .t-col_2 {
+    .works .boosttrap-col_2 {
         float:left;
         max-width: 213px
     }
 
-    .works .t-col_2:nth-child(6n+1) {
+    .works .boosttrap-col_2:nth-child(6n+1) {
         clear: none
     }
 
-    .works .t-col_2:nth-child(3n+1) {
+    .works .boosttrap-col_2:nth-child(3n+1) {
         clear: left
     }
 }
 
 @media screen and (max-width: 640px) {
-    .works .t-col_2 {
+    .works .boosttrap-col_2 {
         float:left;
         max-width: 50%;
         padding-right: 10px;
         clear: left
     }
 
-    .works .t-col_2:nth-child(2n) {
+    .works .boosttrap-col_2:nth-child(2n) {
         padding-right: 20px;
         padding-left: 10px;
         clear: right
@@ -3385,62 +3411,62 @@ img:not([src]) {
     background-color: #000
 }
 
-.t545__sizer.t-col_1 {
+.t545__sizer.boosttrap-col_1 {
     width: 60px!important;
     max-width: 60px!important
 }
 
-.t545__sizer.t-col_2 {
+.t545__sizer.boosttrap-col_2 {
     width: 160px!important;
     max-width: 160px!important
 }
 
-.t545__sizer.t-col_3 {
+.t545__sizer.boosttrap-col_3 {
     width: 260px!important;
     max-width: 260px!important
 }
 
-.t545__sizer.t-col_4 {
+.t545__sizer.boosttrap-col_4 {
     width: 360px!important;
     max-width: 360px!important
 }
 
-.t545__sizer.t-col_5 {
+.t545__sizer.boosttrap-col_5 {
     width: 460px!important;
     max-width: 460px!important
 }
 
-.t545__sizer.t-col_6 {
+.t545__sizer.boosttrap-col_6 {
     width: 560px!important;
     max-width: 560px!important
 }
 
-.t545__sizer.t-col_7 {
+.t545__sizer.boosttrap-col_7 {
     width: 660px!important;
     max-width: 660px!important
 }
 
-.t545__sizer.t-col_8 {
+.t545__sizer.boosttrap-col_8 {
     width: 760px!important;
     max-width: 760px!important
 }
 
-.t545__sizer.t-col_9 {
+.t545__sizer.boosttrap-col_9 {
     width: 860px!important;
     max-width: 860px!important
 }
 
-.t545__sizer.t-col_10 {
+.t545__sizer.boosttrap-col_10 {
     width: 960px!important;
     max-width: 960px!important
 }
 
-.t545__sizer.t-col_11 {
+.t545__sizer.boosttrap-col_11 {
     width: 1060px!important;
     max-width: 1060px!important
 }
 
-.t545__sizer.t-col_12 {
+.t545__sizer.boosttrap-col_12 {
     width: 1160px!important;
     max-width: 1160px!important
 }
@@ -3630,7 +3656,7 @@ img:not([src]) {
     justify-content: flex-end
 }
 
-.t686 .t-col_6 .t686__cell {
+.t686 .boosttrap-col_6 .t686__cell {
     -webkit-transform: translateZ(0);
     transform: translateZ(0)
 }
@@ -4772,7 +4798,7 @@ img:not([src]) {
         padding-bottom: 20px
     }
 
-    .t862__col.t-col {
+    .t862__col.boosttrap-col {
         padding-left: 0;
         padding-right: 0
     }
@@ -5724,30 +5750,36 @@ img:not([src]) {
     }
 }
 
-.t420__descr ul {
+.footer__descr ul {
     padding: 0!important;
     margin: 0
 }
 
-.t420__descr li {
+.footer__descr li {
     display: block;
     margin-bottom: 10px
 }
 
-.t420__descr li:last-child {
+.footer__descr li:last-child {
     margin-bottom: 0
+}
+
+.footer__descr a {
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer__descr a:hover {
+    color: #2e2929;
+    font-size: 17px;
 }
 
 .t420__title {
     margin-bottom: 14px;
-    color: #fff
+    color: #fff;
 }
 
-.t420__title a,.t420__descr a {
-    color: inherit!important
-}
-
-.t420__floatbeaker_lr3 {
+.footer__floatbeaker_lr3 {
     display: none
 }
 
@@ -5756,11 +5788,11 @@ img:not([src]) {
     text-transform: uppercase
 }
 
-.t420__logo-link {
-    display: inline-block
+.footer__logo-link {
+    display: inline-block;
 }
 
-.t420__logo {
+.footer__logo {
     display: block;
     max-width: 120px;
     width: 100%
@@ -5805,21 +5837,21 @@ img:not([src]) {
     display: block
 }
 
-.t420__text {
+.footer__text {
     color: #525252;
     margin-top: 21px;
     font-size: 12px
 }
 
 @media screen and (max-width: 960px) {
-    .t420__col.t-col_3 {
+    .footer__col.boosttrap-col_3 {
         max-width:320px;
         display: inline;
         float: left;
         margin-bottom: 30px
     }
 
-    .t420__floatbeaker_lr3 {
+    .footer__floatbeaker_lr3 {
         display: block;
         width: 100%;
         content: " ";
@@ -5828,14 +5860,14 @@ img:not([src]) {
 }
 
 @media screen and (max-width: 640px) {
-    .t420__col.t-col_3 {
+    .footer__col.boosttrap-col_3 {
         max-width:50%;
         width: 100%
     }
 }
 
 @media screen and (max-width: 420px) {
-    .t420__col.t-col_3 {
+    .footer__col.boosttrap-col_3 {
         max-width:100%;
         width: 100%
     }
@@ -5926,7 +5958,7 @@ img:not([src]) {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    border-left-color: #292929
+    border-lefboosttrap-color: #292929
 }
 
 .t824__btn:not(.t824__btn_active):hover .t824__btn_wrapper {
