@@ -144,16 +144,19 @@ textarea:focus {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-style: normal;
-  border: 1px solid #ffc600;
+  border: 1px solid #55a831;
   border-radius: 1rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffed26), to(#ffb400));
-  background: linear-gradient(180deg, #ffed26 0%, #ffb400 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#55a831), to(#55a831));
+  background: linear-gradient(180deg, #55a831 0%, #55a831 100%);
   -webkit-box-shadow: 1px 2px 20px 0px rgba(255, 153, 0, 0.4);
   box-shadow: 1px 2px 20px 0px rgba(255, 153, 0, 0.4);
 }
 
 .button:hover {
   cursor: pointer;
+  color: #ffffff;
+    border: 1px solid #cbc01f;  
+    background: linear-gradient(180deg, #cbc01f 0%, #cbc01f 100%);
 }
 
 .section_header {
@@ -4488,7 +4491,7 @@ img:not([src]) {
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 0
+    right: 0;
 }
 
 .customers__line_vertical_0 {
