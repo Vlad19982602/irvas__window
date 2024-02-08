@@ -2896,8 +2896,11 @@ img:not([src]) {
 }
 
 .t-name_xs {
-    font-size: 14px;
-    line-height: 1.35
+    padding: 12px 14px;
+    display: block;
+    font-size: 16px;
+    line-height: 1.35;
+    background:#199c68; 
 }
 
 .t-name_md {
@@ -5691,28 +5694,24 @@ img:not([src]) {
     padding: 0!important
 }
 
-
-
-.menu ul .menu-item a .menu__arrow .sub-menu:hover {
-
-}
-
 .sub-menu {
-    padding: 12px 15px;
     display: none;
 }
 
+.sub__menu {
+    display: block;
+    width: 220px;
+    padding: 12px 14px;
+    
+}
+
+ul {
+    display: inline-flex;
+}
 
 
 nav ul li:hover > ul {
     display: initial;
-}
-
-nav ul li a ul li a {
-    padding: 0 0 15px 0;
-    display: block;
-    font-size: 16px;
-    background: #199c68;
 }
 
 
@@ -5720,17 +5719,11 @@ nav ul li a ul li a {
     position: relative;
     clear: both;
     font-size: 16px;
-    display: inline-block;
     padding:0 15px;
     margin: 0;
     white-space: nowrap;
     color: #252c35;
     font-family: 'Ubuntu',Arial,sans-serif
-}
-
-.menu a,#allrecords .menu a {
-    text-decoration: none;
-    color: #252c35
 }
 
 .menu-item .t-active {
