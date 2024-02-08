@@ -6,6 +6,7 @@ import changeModalState from './modules/changeModalState';
 import timer from "./modules/timer";
 import images from "./modules/images";
 import animation from "./modules/animations";
+import scrolling from "./modules/scrolling";
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -21,5 +22,6 @@ window.addEventListener('DOMContentLoaded', () => {
     timer('.container1', deadline);
     images();
     animation();
+    scrolling(".btnup");
     
 });
