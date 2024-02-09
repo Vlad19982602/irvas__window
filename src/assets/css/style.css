@@ -421,6 +421,10 @@ textarea:focus {
   margin-top: 3rem;
 }
 
+.main__wrapper {
+    display: flex;
+}
+
 .main_features_block {
   text-align: center;
 }
@@ -5942,6 +5946,10 @@ nav ul li:hover > ul {
     color: #525252;
     margin-top: 21px;
     font-size: 12px
+}
+
+.footer__text div span:hover {
+    font-size: 14px;
 }
 
 @media screen and (max-width: 960px) {

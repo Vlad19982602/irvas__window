@@ -14087,6 +14087,97 @@ const modals = () => {
 
 /***/ }),
 
+/***/ "./src/js/modules/scrolling.js":
+/*!*************************************!*\
+  !*** ./src/js/modules/scrolling.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const scrolling = (upSelector) => {
+	const upElem = document.querySelector(upSelector);
+	
+
+	window.addEventListener('scroll', () => {
+		if (document.documentElement.scrollTop > 1050) {
+			upElem.classList.add('animate__animated', 'animate__fadeInUp');
+			upElem.classList.remove('animate__fadeOut');
+		} else {
+			upElem.classList.add('animate__fadeOut');
+			upElem.classList.remove('animate__fadeIn');
+		}
+	});
+
+	const elem = document.documentElement,
+		body = document.body;
+
+	const calcScroll = () => {
+		upElem.addEventListener('click', function(event) {
+			let scrollTop = Math.round(body.scrollTop || elem.scrollTop);
+
+			if (this.hash !== '') {
+				event.preventDefault();
+				let hashElement = document.querySelector(this.hash),
+					hashElementTop = 0;
+
+				while (hashElement.offsetParent) {
+					hashElementTop += hashElement.offsetTop;
+					hashElement = hashElement.offsetParent;
+				}
+
+				hashElementTop = Math.round(hashElementTop);
+				smoothScroll(scrollTop, hashElementTop, this.hash); 
+			}
+		});
+	};
+
+	const smoothScroll = (from, to, hash) => {
+		let timeInterval = 1,
+			prevScrollTop,
+			speed;
+
+		if (to > from) {
+			speed = 30;
+		} else {
+			speed = -30;
+		}
+
+		let move = setInterval(function() {
+			let scrollTop = Math.round(body.scrollTop || elem.scrollTop);
+
+			if (prevScrollTop === scrollTop ||
+				(to > from && scrollTop >= to ||
+					to < from && scrollTop <= to)) {
+						clearInterval(move);
+			} else {
+				body.scrollTop += speed;
+				elem.scrollTop += speed;
+				prevScrollTop = scrollTop;
+			}
+		}, timeInterval);
+	};
+
+	calcScroll();
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (scrolling);
+
+const scrollTop = (scrollElem) => {
+	let pos = document.querySelectorAll(scrollElem);
+
+	window.addEventListener('scroll', () => {
+		if(pos.scrollTop > 500) {
+
+		}
+	});
+};
+
+/***/ }),
+
 /***/ "./src/js/modules/tabs.js":
 /*!********************************!*\
   !*** ./src/js/modules/tabs.js ***!
@@ -14384,6 +14475,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_timer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/timer */ "./src/js/modules/timer.js");
 /* harmony import */ var _modules_images__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/images */ "./src/js/modules/images.js");
 /* harmony import */ var _modules_animations__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/animations */ "./src/js/modules/animations.js");
+/* harmony import */ var _modules_scrolling__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/scrolling */ "./src/js/modules/scrolling.js");
+
 
 
 
@@ -14407,6 +14500,7 @@ window.addEventListener('DOMContentLoaded', () => {
     (0,_modules_timer__WEBPACK_IMPORTED_MODULE_5__["default"])('.container1', deadline);
     (0,_modules_images__WEBPACK_IMPORTED_MODULE_6__["default"])();
     (0,_modules_animations__WEBPACK_IMPORTED_MODULE_7__["default"])();
+    (0,_modules_scrolling__WEBPACK_IMPORTED_MODULE_8__["default"])(".btnup");
     
 });
 })();
