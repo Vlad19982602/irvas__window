@@ -89,7 +89,7 @@
           </ul>
         </nav>
       </div>
-      <div class="container">
+      <div class="container container-top">
         <div class="row row-1">
 
           <div id="up" class="col-md-4 col-sm-3 col-xs-12 lg-over">
@@ -1355,7 +1355,7 @@
           <br><br>
           <h4 class="calculator__subtitle">Просто ответьте на 5 вопросов и получите расчёт.</h4>
           <br><br>
-          <button class="calculator__btn" href="#">Перейти к калькулятору</button>
+          <button class="calculator__btn popup_calc_btn" href="#">Перейти к калькулятору</button>
         </div>
       </div>
     </section>
@@ -1629,8 +1629,95 @@
         <div class="popup_dialog">
             <div class="popup_calc_content text-center">
                 <button type="button" class="popup_calc_close"><strong>&times;</strong></button>
-                 <h2>Калькулятор</h2>
-                <h3>Выберите форму балкона <br>и укажите размеры</h3>
+                <div class="t862__quiz-description-block" style="background-color: #252c35;">
+                  <div class="t-descr t-descr_xxs t862__quiz-description" style="">
+                    <div class="t862__quiz-description-title">
+                      <svg role="presentation" viewBox="0 0 100 100" style="stroke:#76b82a;">
+                        <rect x="27.5" y="4.1" class="st61" width="56.5" height="73.5"></rect>
+                        <line class="st61" x1="41.5" y1="22.1" x2="70.6" y2="22.1"></line>
+                        <line class="st61" x1="41.5" y1="38.8" x2="70.6" y2="38.8"></line>
+                        <line class="st61" x1="41.5" y1="55.5" x2="70.6" y2="55.5"></line>
+                        <polyline class="st61" points="66.4,77.6 66.4,95.6 9.8,95.6 9.8,22.1 27.5,22.1 "></polyline>
+                      </svg>
+                      <span class="t862__quiz-description-text" field="descr">
+                        <div style="font-size:20px;color:#ffffff;">
+                          <strong>Ответьте на 5 простых вопросов, которые помогут нам составить точную смету для Вашего объекта.</strong><br>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="t862__quiz-form-wrapper t862__quiz-form-wrapper_newcapturecondition">
+                  <div class="t-form__inputsbox">
+                    <div class="t-input-group t-input-group_rd t-input-group-step_active" role="group" style="display: block;">
+                      <div class="t-input-title t-descr t-descr_md" style="color:#252c35;font-weight:700;">Тип помещения, где требуется вентиляция?</div>
+                      <div class="t-input-block">
+                        <ul class="t-checkboxes__wrapper">
+                          <li class="t-checkboxes__item">
+                            <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                              <input type="checkbox" value="Офис" class="t-checkbox" aria-required="true">
+                              <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Офис
+                            </label>
+                          </li>
+                          <li class="t-checkboxes__item">
+                            <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                              <input type="checkbox" value="Магазин/торговое помещение" class="t-checkbox" aria-required="true">
+                              <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Магазин/торговое помещение
+                            </label>
+                          </li>
+                          <li class="t-checkboxes__item">
+                            <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                              <input type="checkbox" value="Бассейн" class="t-checkbox">
+                              <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Бассейн
+                            </label></li><li class="t-checkboxes__item">
+                              <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                                <input type="checkbox" value="Частный дом/коттедж" class="t-checkbox">
+                                <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Частный дом/коттедж
+                              </label>
+                            </li>
+                            <li class="t-checkboxes__item">
+                              <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                                <input type="checkbox" value="Квартира" class="t-checkbox">
+                                <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Квартира
+                              </label>
+                            </li>
+                            <li class="t-checkboxes__item">
+                              <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                                <input type="checkbox" value="Кафе/ресторан/бар" class="t-checkbox">
+                                <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Кафе/ресторан/бар
+                              </label>
+                            </li>
+                            <li class="t-checkboxes__item">
+                              <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                                <input type="checkbox" value="Промышленное помещение/цех" class="t-checkbox">
+                                <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Промышленное помещение/цех
+                              </label>
+                            </li>
+                            <li class="t-checkboxes__item">
+                              <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                                <input type="checkbox" value="Гостиница" class="t-checkbox">
+                                <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Гостиница
+                              </label>
+                            </li>
+                            <li class="t-checkboxes__item">
+                              <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                                <input type="checkbox" value="Медицинское учереждение" class="t-checkbox">
+                                <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Медицинское учереждение
+                              </label>
+                            </li>
+                            <li class="t-checkboxes__item">
+                              <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                                <input type="checkbox" value="Другое" class="t-checkbox">
+                                <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Другое
+                              </label>
+                            </li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <h3>Выберите форму балкона <br>и укажите размеры</h3>
                 <div class="balcon_icons">
                     <span class="balcon_icons_img do_image_more">
                       <img src="assets/img/modal_calc/balkon/ba_01.png" alt="Тип1"></span>
@@ -1651,7 +1738,7 @@
                 <label for="width">мм</label>
                 <div class="multiplication"><strong>&times;</strong></div>
                 <input class="form-control" id="height" type="text" placeholder="Высота" required>
-                <label for="height">мм</label>
+                <label for="height">мм</label> -->
                 <button class="button popup_calc_button">Далее</button>
             </div>
         </div>

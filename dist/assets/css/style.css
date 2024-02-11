@@ -40,6 +40,9 @@ body {
     transition: all 1.2s ease 0.2s;
 }
 
+.container-top {
+    margin-top: -25px;
+}
 
 
 .d-flex.active {
@@ -1826,7 +1829,7 @@ F
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  width: 44rem;
+  width: 82rem;
   padding: 1rem 0.5rem 4rem;
   background-color: #ffffff;
 }
@@ -2749,46 +2752,6 @@ F
     margin: 0
 }
 
-#allrecords {
-    -webkit-font-smoothing: antialiased;
-    background-color: #f3f2f1
-}
-
-#allrecords a {
-    color: #76b82a;
-    text-decoration: none
-}
-
-#allrecords a,#allrecords button,#allrecords .t-radio,#allrecords .t-checkbox,#allrecords .t-img-select {
-    outline: none
-}
-
-#allrecords a:focus-visible,#allrecords button:focus-visible,#allrecords .t-focusable,#allrecords .t-focusable .t-btn,#allrecords .t-focusable .t-btntext,#allrecords .t-img-select:focus-visible+.t-img-select__indicator,#allrecords .t-img-select:focus-visible+.t-img-select__indicator:after,#allrecords .t-radio:focus-visible+.t-radio__indicator,#allrecords .t-checkbox:focus-visible+.t-checkbox__indicator {
-    outline-color: #2015FF;
-    outline-offset: 4px;
-    outline-style: auto
-}
-
-#allrecords .t-descr a:focus-visible,#allrecords .t-sociallinks a:focus-visible,#allrecords .ya-share2__link:focus-visible {
-    outline-offset: 2px
-}
-
-#allrecords a[href^=tel] {
-    color: inherit;
-    text-decoration: none
-}
-
-#allrecords ol {
-    padding-left: 22px
-}
-
-#allrecords ul {
-    padding-left: 20px
-}
-
-#allrecords b,#allrecords strong {
-    font-weight: 700
-}
 
 @media print {
     body,html {
@@ -2954,7 +2917,7 @@ img:not([src]) {
 .t-descr {
     font-family: 'Ubuntu',Arial,sans-serif;
     font-weight: 400;
-    color: #252c35
+    color: #252c35;
 }
 
 .t-descr_xxs {
@@ -4909,6 +4872,52 @@ img:not([src]) {
     margin-bottom: 15px
 }
 
+.t-checkboxes__wrapper {
+    display: block;
+}
+.t-checkboxes__item {
+    display: flex;
+}
+.t-checkbox__control .t-checkbox:checked~.t-checkbox__indicator {
+    opacity: 1;
+}
+.t-checkbox__indicator {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    margin-right: 10px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    opacity: .6;
+}
+.t-checkbox__control .t-checkbox:checked~.t-checkbox__indicator:after {
+    display: block;
+}
+.t-checkbox__indicator:after {
+    content: '';
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 2px;
+    width: 3px;
+    height: 8px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.t-checkbox__indicator:after {
+    border-color: #76b82a;
+}
+.t-checkbox__control .t-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
 @media screen and (max-width: 1200px) {
     .t862 .t-input-title {
         font-size:24px
@@ -5182,12 +5191,6 @@ img:not([src]) {
 .logo__list {
     font-size: 0;
     transition: opacity ease-in-out .2s
-}
-
-#allrecords ul.logo__list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none
 }
 
 .logo__list_item {
@@ -5620,10 +5623,8 @@ img:not([src]) {
 
 .menu {
     display: block;
-    margin-left: -12.4%;
     text-align: center;
     width: 100%;
-    position: fixed;
     top: 0;
     z-index: 990;
     box-shadow: 0 1px 3px rgba(0,0,0,0);
@@ -5632,7 +5633,6 @@ img:not([src]) {
     -o-transition: background-color 300ms linear;
     -ms-transition: background-color 300ms linear;
     transition: background-color 300ms linear;
-    height: 50px
 }
 
 .menu__beforeready {
@@ -5693,6 +5693,7 @@ img:not([src]) {
 }
 
 .sub-menu {
+    z-index: 1;
     display: none;
     border: 1px solid rgba(0,0,0, 0.1);
 }
