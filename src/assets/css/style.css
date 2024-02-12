@@ -33,11 +33,15 @@ body {
   color: red;
 }
 
+.container-top {
+    margin-top: -25px;
+}
+
 .d-flex {
     display: flex;
-    transform: translate(0px, 120%);
+    transform: translate(0px, 100%);
     opacity: 0;
-    transition: all 1.2s ease 0.2s;
+    transition: all 2.2s ease 2.2s;
 }
 
 .container-top {
@@ -187,9 +191,9 @@ textarea:focus {
   margin-bottom: 8rem;
   text-align: center;
   text-transform: uppercase;
-  transform: translate(0px, 250%);
+  transform: translate(0px, 125%);
   opacity: 0;
-  transition: all 1.2s ease 0.2s;
+  transition: all 1.2s ease 1.2s;
 }
 
 .section_header-rec.active {
