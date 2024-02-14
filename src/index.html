@@ -1355,7 +1355,7 @@
           <br><br>
           <h4 class="calculator__subtitle">Просто ответьте на 5 вопросов и получите расчёт.</h4>
           <br><br>
-          <button class="calculator__btn popup_calc_btn" href="#">Перейти к калькулятору</button>
+          <button class="calculator__btn popup_calc_btn" data-modal href="#">Перейти к калькулятору</button>
         </div>
       </div>
     </section>
@@ -1739,7 +1739,7 @@
                 <div class="multiplication"><strong>&times;</strong></div>
                 <input class="form-control" id="height" type="text" placeholder="Высота" required>
                 <label for="height">мм</label> -->
-                <button class="button popup_calc_button">Далее</button>
+                <button class="button popup_calc_btns popup_calc_button-next">Далее</button>
             </div>
         </div>
     </div> 
@@ -1748,29 +1748,41 @@
         <div class="popup_dialog">
             <div class="popup_calc_profile_content text-center">
                 <button type="button" class="popup_calc_profile_close"><strong>&times;</strong></button>
-                 <h2>Калькулятор</h2>
-                 <h3>Выберите тип остекления <br>и его профиль</h3>
-                 <select class="form-control" name="view" id="view_type">
-                   <option value="tree">Деревянное остекление</option>
-                   <option value="aluminum">Алюминиевое остекление</option>
-                   <option value="plastic">Остекление пластиковыми рамами</option>
-                   <option value="french">Панорамное остекление</option>
-                   <option value="overhang">Остекление с выносом</option>
-                 </select>
-                 <img src="assets/img/modal_calc/icon_cold.png" alt="">
-                 <label>
-                     <input class="checkbox" type="checkbox" name="checkbox-test">
-                     <span class="checkbox-custom" id="cold"></span>
-                     <span class="label">Холодное</span>
-                 </label>
-                 <img src="assets/img/modal_calc/icon_warm.png" alt="">
-                 <label>
-                     <input class="checkbox" type="checkbox" name="checkbox-test">
-                     <span class="checkbox-custom" id="warm"></span>
-                     <span class="label">Теплое</span>
-                 </label>
+                <div class="t862__quiz-description-block" style="background-color: #252c35;">
+                  <div class="t-descr t-descr_xxs t862__quiz-description" style="">
+                    <div class="t862__quiz-description-title">
+                      <svg role="presentation" viewBox="0 0 100 100" style="stroke:#76b82a;">
+                        <rect x="27.5" y="4.1" class="st61" width="56.5" height="73.5"></rect>
+                        <line class="st61" x1="41.5" y1="22.1" x2="70.6" y2="22.1"></line>
+                        <line class="st61" x1="41.5" y1="38.8" x2="70.6" y2="38.8"></line>
+                        <line class="st61" x1="41.5" y1="55.5" x2="70.6" y2="55.5"></line>
+                        <polyline class="st61" points="66.4,77.6 66.4,95.6 9.8,95.6 9.8,22.1 27.5,22.1 "></polyline>
+                      </svg>
+                      <span class="t862__quiz-description-text" field="descr">
+                        <div style="font-size:20px;color:#ffffff;">
+                          <strong>Ответьте на 5 простых вопросов, которые помогут нам составить точную смету для Вашего объекта.</strong><br>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                </div>
 
-                 <button class="button popup_calc_profile_button">Далее</button>
+                <div class="t862__quiz-form-wrapper t862__quiz-form-wrapper_newcapturecondition">
+                  <div class="t-form__inputsbox">
+                    <div class="t-input-group t-input-group_rg t-input-group-step_active">
+                      <label for="input_1534434218619" class="t-input-title t-descr t-descr_md" id="field-title_1534434218619" data-redactor-toolbar="no" field="li_title__1534434218619" style="color:#252c35;font-weight:700;">Площадь помещения (квадратные метры)?</label>
+                      <div class="t-range__wrapper">
+                        <input name="Площадь помещения квадратные метры" id="input_1534434218619" class="t-range js-tilda-rule" type="range" min="90" max="1000" step="5" value="квадратный метр" data-range-color="#76b82a" style="width: 100%;">
+                        <div class="t-range__value-txt t-descr t-descr_xxs" style="left: 345px; display: block;">545</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="d-btn">
+                  <button class="button popup_calc_btns popup_calc_button-end">Назад</button>
+                  <button class="button popup_calc_btns popup_calc_button-next">Далее</button>
+                </div>
             </div>
         </div>
     </div> 

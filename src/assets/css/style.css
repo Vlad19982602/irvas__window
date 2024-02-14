@@ -20,6 +20,14 @@ body {
 	left: 1%;
 }
 
+.d-btn {
+    display: flex;
+    justify-content: space-around;
+    bottom: 45px;
+    width: 100%;
+    padding: 0 45px;
+}
+
 .btnup svg {
 	fill: var(--link-hover);
 	transition: .3s;
@@ -31,6 +39,37 @@ body {
 .status {
   display: block;
   color: red;
+}
+
+
+.d-btn .popup_calc_button-next::after {
+    content: " →" / "";
+    top: 50%;
+    right: 19px;
+    font-size: 18px;
+    line-height: 1;
+    transform: translateY(-55%);
+}
+.d-btn .popup_calc_button-end::after {
+    content: " →" / "";
+    position: absolute;
+    top: 82%;
+    left: 202px;
+    font-size: 18px;
+    line-height: 1.3;
+    transform: rotate(180deg) translateY(45%);
+}
+.popup_calc_button-next::after {
+    content: " →" / "";
+    top: 50%;
+    right: 19px;
+    font-size: 18px;
+    line-height: 1;
+    transform: translateY(-55%);
+}
+
+.popup_calc_btns {
+    width: 32%;
 }
 
 .container-top {
@@ -1921,7 +1960,7 @@ F
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  width: 40rem;
+  width: 82rem;
   padding: 1rem 5rem 4rem;
   background-color: #ffffff;
   /*	label {
