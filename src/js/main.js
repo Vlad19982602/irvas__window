@@ -23,5 +23,6 @@ window.addEventListener('DOMContentLoaded', () => {
     images();
     animation();
     scrolling(".btnup");
+    scrolling('.t824__popup-container');
     
 });

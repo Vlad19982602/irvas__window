@@ -95,7 +95,7 @@ body {
     display: flex;
     transform: translate(0px, 100%);
     opacity: 0;
-    transition: all 2.2s ease 2.2s;
+    transition: all 1.2s ease 0.2s;
 }
 
 .container-top {
@@ -247,7 +247,7 @@ textarea:focus {
   text-transform: uppercase;
   transform: translate(0px, 125%);
   opacity: 0;
-  transition: all 1.2s ease 1.2s;
+  transition: all 1.2s ease 0.2s;
 }
 
 .section_header-rec.active {
@@ -1139,9 +1139,13 @@ F
 }
 
 .works__wrapper {
-    transform: translate(0px, 100%);
+    transform: translate(0px, 150%);
     opacity: 0;
     transition: all 1.2s ease 0.2s;
+}
+
+.works__wrapper:first-child {
+    display: contents;
 }
 
 .works__wrapper:last-child {
@@ -1655,9 +1659,9 @@ F
 
 
 /*Contacts*/
-.contacts {
+/* .contacts {
   padding: 6rem 0;
-}
+} */
 
 .contacts_info {
   margin-top: -3rem;
@@ -6322,11 +6326,6 @@ nav ul li:hover > ul {
     z-index: 1;
     cursor: default;
     max-width: 360px
-}
-
-.t824__popup-container_show {
-    visibility: visible;
-    opacity: 1
 }
 
 .t824__wrapper {

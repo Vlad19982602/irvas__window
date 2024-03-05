@@ -65,13 +65,3 @@ const scrolling = (upSelector) => {
 };
 
 export default scrolling;
-
-const scrollTop = (scrollElem) => {
-	let pos = document.querySelectorAll(scrollElem);
-
-	window.addEventListener('scroll', () => {
-		if(pos.scrollTop > 500) {
-
-		}
-	});
-};
