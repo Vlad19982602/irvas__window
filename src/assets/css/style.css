@@ -1816,7 +1816,8 @@ F
 /*Modals*/
 .popup,
 .popup_engineer,
-.popup_calc_end {
+.popup_calc_end,
+.popup_stock {
   display: none;
   position: fixed;
   top: 0;
@@ -1851,20 +1852,22 @@ F
 
 .popup_content,
 .popup_engineer_content,
-.popup_calc_end_content {
+.popup_calc_end_content,
+.popup_stock-content {
   /* display: none; */
   position: fixed;
   top: 10%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  width: 40rem;
+  width: 85rem;
   background-color: #ffffff;
 }
 
 .popup_close,
 .popup_engineer_close,
-.popup_calc_end_close {
+.popup_calc_end_close,
+.popup_calc_stock_close {
   position: absolute;
   top: -2.2rem;
   right: -5rem;
@@ -2080,6 +2083,11 @@ F
   transform: translateX(-50%);
   margin-top: 1rem;
   padding: 1rem 5rem;
+}
+
+.t-radio__wrapper {
+    display: block;
+    margin-top: 5px;
 }
 
 /*Media*/
@@ -2906,6 +2914,7 @@ img:not([src]) {
 }
 
 .t-text_xs {
+    display: block;
     font-size: 13px;
     line-height: 1.55
 }
@@ -4765,8 +4774,7 @@ img:not([src]) {
 }
 
 .t862__btn-wrapper {
-    position: absolute;
-    bottom: 45px;
+    margin-bottom: 45px;
     width: 100%;
     padding-left: 45px;
     padding-right: 45px;
@@ -4793,11 +4801,13 @@ img:not([src]) {
 .t862__btn-wrapper .t862__btn_prev {
     float: left;
     color: #ffffff;
-    background-color: #cbcbcb
+    background-color: #cbcbcb;
+    width: 32%;
 }
 
 .t862__btn-wrapper .t862__btn_next,.t862__btn-wrapper .t862__btn_result {
-    float: right
+    float: right;
+    width: 32%;
 }
 
 .t862__btn-wrapper .t862__btn_prev td,.t862__btn-wrapper .t862__btn_next td,.t862__btn-wrapper .t862__btn_result td {
@@ -4832,7 +4842,17 @@ img:not([src]) {
     font-size: 18px;
     line-height: 1;
     -webkit-transform: translateY(-55%);
-    transform: translateY(-55%)
+    transform: translateY(-55%);
+}
+.t862__btn-wrapper .t862__btn_nexts td::after {
+    content: "\00a0→" / "";
+    position: absolute;
+    top: 50%;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    -webkit-transform: translateY(-55%);
+    transform: translateY(-55%);
 }
 
 .t862__btn_result {
@@ -4936,6 +4956,7 @@ img:not([src]) {
 
 .t-checkboxes__wrapper {
     display: block;
+    padding: 15px 15px 55px 15px;
 }
 .t-checkboxes__item {
     display: flex;

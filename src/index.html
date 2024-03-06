@@ -1710,7 +1710,7 @@
                 <div class="multiplication"><strong>&times;</strong></div>
                 <input class="form-control" id="height" type="text" placeholder="Высота" required>
                 <label for="height">мм</label> -->
-                <button class="button popup_calc_btns popup_calc_button-next">Далее</button>
+                <button class="button popup_calc_btns popup_calc_button-next" style="color: #fff;">Далее</button>
             </div>
         </div>
     </div> 
@@ -1754,9 +1754,17 @@
                   </div>
                 </div>
                 
-                <div class="d-btn">
-                  <button class="button popup_calc_btns popup_calc_button-end">Назад</button>
-                  <button class="button popup_calc_btns popup_calc_profile_button popup_calc_button-next">Далее</button>
+                <div class="t862__btn-wrapper">
+                  <button class="button t862__btn_prev" type="button" style="border-radius:1rem;">
+                    <table role="presentation" style="width:100%; height:100%;">
+                      <tbody><tr><td>Назад</td></tr></tbody>
+                    </table>
+                  </button>
+                  <button class="button t862__btn_next" type="button" style="color: rgb(243, 242, 241); background-color: rgb(118, 184, 42); border-radius: 1rem; display: block;">
+                    <table role="presentation" style="width:100%; height:100%;">
+                      <tbody><tr><td>Вперед</td></tr></tbody>
+                    </table>
+                  </button>
                 </div>
             </div>
         </div>
@@ -1784,8 +1792,115 @@
                     </div>
                   </div>
                 </div>
+                <div class="t862__quiz-form-wrapper t862__quiz-form-wrapper_newcapturecondition">
+                  <div class="t-form__inputsbox">
+                    <div class="t-input-group t-input-group_rd t-input-group-step_active" style="display: block;">
+                      <div class="t-input-title t-descr t-descr_md" field="li_title__1534434222621" style="color:#252c35;font-weight:700;margin-bottom: 15px;">Какую задачу должна решать вентиляция?</div>
+                      <div class="t-input-block">
+                        <ul class="t-checkboxes__wrapper">
+                          <li class="t-checkboxes__item">
+                            <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                              <input type="checkbox" value="Подача чистого воздуха в помещение вентиляционной установкой с автоматизацией управления" class="t-checkbox" data-tilda-req="1" aria-required="true">
+                              <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Подача чистого воздуха в помещение вентиляционной установкой с автоматизацией управления
+                            </label>
+                          </li>
+                          <li class="t-checkboxes__item">
+                            <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                              <input type="checkbox" value="Изменение и поддержание температуры воздуха" class="t-checkbox" data-tilda-req="1" aria-required="true">
+                              <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Изменение и поддержание температуры воздуха
+                            </label>
+                          </li>
+                          <li class="t-checkboxes__item">
+                            <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                              <input type="checkbox" value="Осушение воздуха (уменьшение влажности)" class="t-checkbox" data-tilda-req="1" aria-required="true">
+                              <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Осушение воздуха (уменьшение влажности)
+                            </label>
+                          </li>
+                          <li class="t-checkboxes__item">
+                            <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                              <input type="checkbox" value="Другое" class="t-checkbox" data-tilda-req="1" aria-required="true">
+                              <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Другое
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="t862__btn-wrapper">
+                  <button class="button t862__btn_prev" type="button" style="border-radius:1rem;">
+                    <table role="presentation" style="width:100%; height:100%;">
+                      <tbody><tr><td>Назад</td></tr></tbody>
+                    </table>
+                  </button>
+                  <button class="button t862__btn_next" type="button" style="color: rgb(243, 242, 241); background-color: rgb(118, 184, 42); border-radius: 1rem; display: block;">
+                    <table role="presentation" style="width:100%; height:100%;">
+                      <tbody><tr><td>Вперед</td></tr></tbody>
+                    </table>
+                  </button>
+                </div>
             </div>
         </div>
+    </div>
+
+    <div class="popup_stock" data-modal>
+      <div class="popup_dialog">
+        <div class="popup_stock-content text-center">
+          <button type="button" class="popup_calc_stock_close"><strong>&times;</strong></button>
+          <div class="t862__quiz-description-block" style="background-color: #252c35;">
+            <div class="t-descr t-descr_xxs t862__quiz-description">
+              <div class="t862__quiz-description-title">
+                <svg role="presentation" viewBox="0 0 100 100" style="stroke:#76b82a;">
+                  <rect x="27.5" y="4.1" class="st61" width="56.5" height="73.5"></rect>
+                  <line class="st61" x1="41.5" y1="22.1" x2="70.6" y2="22.1"></line>
+                  <line class="st61" x1="41.5" y1="38.8" x2="70.6" y2="38.8"></line>
+                  <line class="st61" x1="41.5" y1="55.5" x2="70.6" y2="55.5"></line>
+                  <polyline class="st61" points="66.4,77.6 66.4,95.6 9.8,95.6 9.8,22.1 27.5,22.1 "></polyline>
+                </svg>
+                <span class="t862__quiz-description-text" field="descr">
+                  <div style="font-size:20px;color:#ffffff;">
+                    <strong>Ответьте на 5 простых вопросов, которые помогут нам составить точную смету для Вашего объекта.</strong><br>
+                  </div>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="t862__quiz-form-wrapper t862__quiz-form-wrapper_newcapturecondition">
+            <div class="t-form__inputsbox">
+              <div class="t-input-title t-descr t-descr_md">В каком месяце необходимо запустить систему в работу?</div>
+              <div class="t-input-block ">
+                <div class="t-radio__wrapper">
+                  <label class="t-radio__control t-text t-text_xs" style="color: #252c35">
+                    <input type="radio" name="В каком месяце необходимо запустить систему в работу" value="в течение 2-6 месяцев" class="t-radio js-tilda-rule" data-tilda-req="1" aria-required="true">
+                    <div class="t-radio__indicator" style="border-color:#76b82a"></div>в течение 2-6 месяцев
+                  </label>
+                  <label class="t-radio__control t-text t-text_xs" style="color: #252c35">
+                    <input type="radio" name="В каком месяце необходимо запустить систему в работу" value="в течение 1 года" class="t-radio js-tilda-rule" data-tilda-req="1" aria-required="true">
+                    <div class="t-radio__indicator" style="border-color:#76b82a"></div>в течение 1 года
+                  </label>
+                  <label class="t-radio__control t-text t-text_xs" style="color: #252c35">
+                    <input type="radio" name="В каком месяце необходимо запустить систему в работу" value="другое" class="t-radio js-tilda-rule" data-tilda-req="1" aria-required="true">
+                    <div class="t-radio__indicator" style="border-color:#76b82a"></div>другое
+                  </label>
+                </div>
+                <div class="t-input-error" aria-live="polite" id="error_1534435425911"></div>
+              </div>
+            </div>
+          </div>
+          <div class="t862__btn-wrapper">
+            <button class="button t862__btn_prev" type="button" style="border-radius:1rem;">
+              <table role="presentation" style="width:100%; height:100%;">
+                <tbody><tr><td>Назад</td></tr></tbody>
+              </table>
+            </button>
+            <button class="button t862__btn_next" type="button" style="color: rgb(243, 242, 241); background-color: rgb(118, 184, 42); border-radius: 1rem; display: block;">
+              <table role="presentation" style="width:100%; height:100%;">
+                <tbody><tr><td>Вперед</td></tr></tbody>
+              </table>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="t824__popup-container" style="background-color: rgb(243, 242, 241); visibility: visible; opacity: 1;" data-appearoffset="500px">
@@ -1835,6 +1950,6 @@
     </a>
 
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
