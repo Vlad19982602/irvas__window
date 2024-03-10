@@ -14416,16 +14416,6 @@ const scrolling = (upSelector) => {
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (scrolling);
 
-const scrollTop = (scrollElem) => {
-	let pos = document.querySelectorAll(scrollElem);
-
-	window.addEventListener('scroll', () => {
-		if(pos.scrollTop > 500) {
-
-		}
-	});
-};
-
 /***/ }),
 
 /***/ "./src/js/modules/tabs.js":
@@ -14743,7 +14733,7 @@ __webpack_require__.r(__webpack_exports__);
 window.addEventListener('DOMContentLoaded', () => {
 
     let modalState = {};
-    let deadline = '2024-09-09';
+    //let deadline = '2024-09-09';
 
     (0,_modules_changeModalState__WEBPACK_IMPORTED_MODULE_4__["default"])(modalState);
     (0,_modules_modals__WEBPACK_IMPORTED_MODULE_1__["default"])();
@@ -14751,10 +14741,11 @@ window.addEventListener('DOMContentLoaded', () => {
     (0,_modules_tabs__WEBPACK_IMPORTED_MODULE_2__["default"])('.decoration_slider', '.no_click', '.decoration_content > div > div', 'after_click');
     (0,_modules_tabs__WEBPACK_IMPORTED_MODULE_2__["default"])('.balcon_icons', '.balcon_icons_img', '.big_img > img', 'do_image_more', 'inline-block');
     (0,_modules_forms__WEBPACK_IMPORTED_MODULE_3__["default"])();
-    (0,_modules_timer__WEBPACK_IMPORTED_MODULE_5__["default"])('.container1', deadline);
+    //timer('.container1', deadline);
     (0,_modules_images__WEBPACK_IMPORTED_MODULE_6__["default"])();
     (0,_modules_animations__WEBPACK_IMPORTED_MODULE_7__["default"])();
     (0,_modules_scrolling__WEBPACK_IMPORTED_MODULE_8__["default"])(".btnup");
+    (0,_modules_scrolling__WEBPACK_IMPORTED_MODULE_8__["default"])('.t824__popup-container');
     
 });
 })();

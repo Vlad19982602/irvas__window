@@ -6328,11 +6328,6 @@ nav ul li:hover > ul {
     max-width: 360px
 }
 
-.t824__popup-container_show {
-    visibility: visible;
-    opacity: 1
-}
-
 .t824__wrapper {
     position: relative;
     padding-top: 48px;
