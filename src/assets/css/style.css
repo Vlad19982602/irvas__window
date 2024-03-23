@@ -6310,6 +6310,7 @@ nav ul li:hover > ul {
     opacity: 1
 }
 
+
 .t824__popup-container {
     visibility: hidden;
     opacity: 0;
@@ -6326,6 +6327,11 @@ nav ul li:hover > ul {
     z-index: 1;
     cursor: default;
     max-width: 360px
+}
+
+.t824__popup-container-visible {
+    visibility: visible;
+    opacity: 1;
 }
 
 .t824__wrapper {
