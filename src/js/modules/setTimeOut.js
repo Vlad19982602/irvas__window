@@ -7,19 +7,21 @@ const timeId = () => {
         if(block) {
             block.classList.add('t824__popup-container-visible', 'animate__animated', 'animate__fadeInUp');
         }
-    }, 5000)
+    }, 60000)
 
     if(close) {
         close.addEventListener('click', () => {
             windows.forEach(item => {
                 item.style.display = 'none';
             });
-    
-            // modal.style.display = "none";
-            // document.body.style.overflow = "";
-            // document.body.classList.remove('modal-open');
         });
     }
+
+    // setInterval(() => {
+    //     if(block.close) {
+    //         block.classList.toggle('t824__popup-container-visible', 'animate__animated', 'animate__fadeInUp');
+    //     }
+    // }, 1000)
 }
 
 export default timeId;
