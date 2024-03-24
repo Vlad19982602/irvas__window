@@ -107,7 +107,7 @@
            <div class="header_btn_wrap">
              <div class="header_btn_wrap_block">
               <div class="logo__right_descr">
-                <div style="font-size:14px;text-align:left;color:#000;">
+                <div style="font-size:19px;text-align:left;color:#000;">
                   <strong>vent@airmaster74.ru</strong><br><br>
                   <strong>Челябинск, ул. Стартовая, д. 34, оф. 101</strong><br>
                 </div>
@@ -275,6 +275,20 @@
         </div>
       </div>
     </main>
+
+    <section class="calculator-2">
+
+      <div class="container">
+
+        <div class="row">
+          <h3 class="calculator__title" style="color:#000">Рассчитайте стоимость вентиляции</h3>
+          <br><br>
+          <h4 class="calculator__subtitle" style="color:#000">Просто ответьте на 5 вопросов и получите расчёт.</h4>
+          <br><br>
+          <button class="calculator__btn popup_calc_btn" data-modal href="#">Перейти к калькулятору</button>
+        </div>
+      </div>
+    </section>
 
     <!-- Glazing -->
     <!-- <section class="glazing">
@@ -1003,7 +1017,7 @@
         <div class="row">
           <div class="works__wrapper _anim-items">
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow">
-              <a href="assets/img/our_works/big_img/1-1.jpg">
+              <a class="works__bigimg" href="assets/img/our_works/big_img/1-1.jpg">
                 <img class="preview" src="assets/img/our_works/1-1.webp" alt="work">
               </a>
               <div class="works__textwrapper">
@@ -1015,7 +1029,7 @@
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow" data-wow-delay="0.1s">
-              <a href="assets/img/our_works/big_img/2-2.jpg">
+              <a class="works__bigimg" href="assets/img/our_works/big_img/2-2.jpg">
                 <img class="preview" src="assets/img/our_works/2-2.webp" alt="work">
               </a>
               <div class="works__textwrapper">
@@ -1027,7 +1041,7 @@
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow" data-wow-delay="0.2s">
-              <a href="assets/img/our_works/big_img/3-3.jpg">
+              <a class="works__bigimg" href="assets/img/our_works/big_img/3-3.jpg">
                 <img class="preview" src="assets/img/our_works/3-3.jpg" alt="work">
               </a>
               <div class="works__textwrapper">
@@ -1039,7 +1053,7 @@
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow" data-wow-delay="0.3s">
-              <a href="assets/img/our_works/big_img/4-4.jpg">
+              <a class="works__bigimg" href="assets/img/our_works/big_img/4-4.jpg">
                 <img class="preview" src="assets/img/our_works/4-4.webp" alt="work">
               </a>
               <div class="works__textwrapper">
@@ -1053,7 +1067,7 @@
           </div>
           <div class="works__wrapper _anim-items">
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow" data-wow-delay="0.4s">
-              <a href="assets/img/our_works/big_img/5-5.jpg">
+              <a class="works__bigimg" href="assets/img/our_works/big_img/5-5.jpg">
                 <img class="preview" src="assets/img/our_works/5-5.jpg" alt="work">
               </a>
               <div class="works__textwrapper">
@@ -1065,7 +1079,7 @@
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow" data-wow-delay="0.5s">
-              <a href="assets/img/our_works/big_img/6-6.jpg">
+              <a class="works__bigimg" href="assets/img/our_works/big_img/6-6.jpg">
                 <img class="preview" src="assets/img/our_works/6-6.jpg" alt="work">
               </a>
               <div class="works__textwrapper">
@@ -1077,7 +1091,7 @@
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow" data-wow-delay="0.7s">
-              <a href="assets/img/our_works/big_img/7-7.jpg">
+              <a class="works__bigimg" href="assets/img/our_works/big_img/7-7.jpg">
                 <img class="preview" src="assets/img/our_works/7-7.jpg" alt="work">
               </a>
               <div class="works__textwrapper">
@@ -1089,7 +1103,7 @@
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow" data-wow-delay="0.8s">
-              <a href="assets/img/our_works/big_img/8-8.jpg">
+              <a class="works__bigimg" href="assets/img/our_works/big_img/8-8.jpg">
                 <img class="preview" src="assets/img/our_works/8-8.jpg" alt="work">
               </a>
               <div class="works__textwrapper">
@@ -1626,59 +1640,59 @@
                       <div class="t-input-block">
                         <ul class="t-checkboxes__wrapper">
                           <li class="t-checkboxes__item">
-                            <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
-                              <input type="checkbox" value="Офис" class="t-checkbox" aria-required="true">
+                            <label class="t-checkbox__controls t-text t-text_xs" style="color: #252c35">
+                              <input type="checkbox" value="Изменение и поддержание температуры воздуха" class="t-checkbox" data-tilda-req="1" aria-required="true">
                               <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Офис
                             </label>
                           </li>
                           <li class="t-checkboxes__item">
-                            <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                            <label class="t-checkbox__controls t-text t-text_xs" style="color: #252c35">
                               <input type="checkbox" value="Магазин/торговое помещение" class="t-checkbox" aria-required="true">
                               <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Магазин/торговое помещение
                             </label>
                           </li>
                           <li class="t-checkboxes__item">
-                            <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                            <label class="t-checkbox__controls t-text t-text_xs" style="color: #252c35">
                               <input type="checkbox" value="Бассейн" class="t-checkbox">
                               <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Бассейн
                             </label></li><li class="t-checkboxes__item">
-                              <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                              <label class="t-checkbox__controls t-text t-text_xs" style="color: #252c35">
                                 <input type="checkbox" value="Частный дом/коттедж" class="t-checkbox">
                                 <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Частный дом/коттедж
                               </label>
                             </li>
                             <li class="t-checkboxes__item">
-                              <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                              <label class="t-checkbox__controls t-text t-text_xs" style="color: #252c35">
                                 <input type="checkbox" value="Квартира" class="t-checkbox">
                                 <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Квартира
                               </label>
                             </li>
                             <li class="t-checkboxes__item">
-                              <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                              <label class="t-checkbox__controls t-text t-text_xs" style="color: #252c35">
                                 <input type="checkbox" value="Кафе/ресторан/бар" class="t-checkbox">
                                 <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Кафе/ресторан/бар
                               </label>
                             </li>
                             <li class="t-checkboxes__item">
-                              <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                              <label class="t-checkbox__controls t-text t-text_xs" style="color: #252c35">
                                 <input type="checkbox" value="Промышленное помещение/цех" class="t-checkbox">
                                 <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Промышленное помещение/цех
                               </label>
                             </li>
                             <li class="t-checkboxes__item">
-                              <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                              <label class="t-checkbox__controls t-text t-text_xs" style="color: #252c35">
                                 <input type="checkbox" value="Гостиница" class="t-checkbox">
                                 <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Гостиница
                               </label>
                             </li>
                             <li class="t-checkboxes__item">
-                              <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                              <label class="t-checkbox__controls t-text t-text_xs" style="color: #252c35">
                                 <input type="checkbox" value="Медицинское учереждение" class="t-checkbox">
                                 <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Медицинское учереждение
                               </label>
                             </li>
                             <li class="t-checkboxes__item">
-                              <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                              <label class="t-checkbox__controls t-text t-text_xs" style="color: #252c35">
                                 <input type="checkbox" value="Другое" class="t-checkbox">
                                 <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Другое
                               </label>
@@ -1764,7 +1778,7 @@
 
     <div class="popup_calc_end" data-modal>
         <div class="popup_dialog">
-            <div class="popup_content text-center">
+            <div class="popup_calc_profile_content popup_content text-center">
                 <button type="button" class="popup_calc_end_close"><strong>&times;</strong></button>
                 <div class="t862__quiz-description-block" style="background-color: #252c35;">
                   <div class="t-descr t-descr_xxs t862__quiz-description">
@@ -1784,8 +1798,138 @@
                     </div>
                   </div>
                 </div>
+                <div class="t862__quiz-form-wrapper t862__quiz-form-wrapper_newcapturecondition">
+                  <div class="t-form__inputsbox">
+                    <div class="t862__screen-wrapper t-step-form__step t-step-form__step_active">
+                      <div class="t-input-group t-input-group_rd">
+                        <div class="t-input-title t-descr t-descr_md" id="field-title_1534434222621" data-redactor-toolbar="no" field="li_title__1534434222621" style="color:#252c35;font-weight:700;">Какую задачу должна решать вентиляция?</div>
+                        <div class="t-input-block">
+                          <ul class="t-checkboxes__wrapper">
+                            <li class="t-checkboxes__item">
+                              <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                                <input type="checkbox" value="Подача чистого воздуха в помещение вентиляционной установкой с автоматизацией управления" class="t-checkbox" data-tilda-req="1" aria-required="true">
+                                <div class="t-checkbox__indicator" style="border-color:#76b82a">
+                                </div>Подача чистого воздуха в помещение вентиляционной установкой с автоматизацией управления
+                              </label>
+                            </li>
+                            <li class="t-checkboxes__item">
+                              <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                                <input type="checkbox" value="Изменение и поддержание температуры воздуха" class="t-checkbox" data-tilda-req="1" aria-required="true">
+                                <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Изменение и поддержание температуры воздуха
+                              </label>
+                            </li>
+                            <li class="t-checkboxes__item">
+                              <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                                <input type="checkbox" value="Осушение воздуха (уменьшение влажности)" class="t-checkbox" data-tilda-req="1" aria-required="true">
+                                <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Осушение воздуха (уменьшение влажности)</label>
+                              </li>
+                              <li class="t-checkboxes__item">
+                                <label class="t-checkbox__control t-text t-text_xs" style="color: #252c35">
+                                  <input type="checkbox" value="Другое" class="t-checkbox" data-tilda-req="1" aria-required="true">
+                                  <div class="t-checkbox__indicator" style="border-color:#76b82a"></div>Другое
+                                </label>
+                              </li>
+                            </ul>
+                        </div> 
+                      </div>
+                    </div>
+                    <div class="d-btn">
+                      <button class="button popup_calc_btns popup_calc_button-end">Назад</button>
+                      <button class="button popup_calc_btns popup_calc_profile_button-5 popup_calc_button-next">Далее</button>
+                    </div>
+                  </div>
+                </div>
             </div>
         </div>
+    </div>
+
+    <div class="popup_calc_four" data-modal>
+      <div class="popup_dialog">
+          <div class="popup_calc_profile_content popup_content text-center">
+              <button type="button" class="popup_calc_end_close-four"><strong>&times;</strong></button>
+              <div class="t862__quiz-description-block" style="background-color: #252c35;">
+                <div class="t-descr t-descr_xxs t862__quiz-description">
+                  <div class="t862__quiz-description-title">
+                    <svg role="presentation" viewBox="0 0 100 100" style="stroke:#76b82a;">
+                      <rect x="27.5" y="4.1" class="st61" width="56.5" height="73.5"></rect>
+                      <line class="st61" x1="41.5" y1="22.1" x2="70.6" y2="22.1"></line>
+                      <line class="st61" x1="41.5" y1="38.8" x2="70.6" y2="38.8"></line>
+                      <line class="st61" x1="41.5" y1="55.5" x2="70.6" y2="55.5"></line>
+                      <polyline class="st61" points="66.4,77.6 66.4,95.6 9.8,95.6 9.8,22.1 27.5,22.1 "></polyline>
+                    </svg>
+                    <span class="t862__quiz-description-text" field="descr">
+                      <div style="font-size:20px;color:#ffffff;">
+                        <strong>Ответьте на 5 простых вопросов, которые помогут нам составить точную смету для Вашего объекта.</strong><br>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="t862__quiz-form-wrapper t862__quiz-form-wrapper_newcapturecondition">
+                <div class="t-form__inputsbox">
+                  <div class="t862__screen-wrapper t-step-form__step t-step-form__step_active">
+                    <div class="t-input-group t-input-group_rd">
+                      <div class="t-input-title t-descr t-descr_md" id="field-title_1534435425911" data-redactor-toolbar="no" field="li_title__1534435425911" style="color:#252c35;font-weight:700;">В каком месяце необходимо запустить систему в работу?</div>
+                      <div class="t-input-block">
+                        <div class="t-radio__wrapper">
+                          <label class="t-radio__control t-text t-text_xs" style="border-color:#76b82a"><input type="radio" name="В каком месяце необходимо запустить систему в работу" value="в течение 2-6 месяцев" class="t-radio js-tilda-rule" data-tilda-req="1" aria-required="true"><div class="t-radio__indicator" style="border-color:#76b82a"></div>в течение 2-6 месяцев</label>
+                          <label class="t-radio__control t-text t-text_xs" style="border-color:#76b82a"><input type="radio" name="В каком месяце необходимо запустить систему в работу" value="в течение 1 года" class="t-radio js-tilda-rule" data-tilda-req="1" aria-required="true"><div class="t-radio__indicator" style="border-color:#76b82a"></div>в течение 1 года</label>
+                          <label class="t-radio__control t-text t-text_xs" style="border-color:#76b82a"><input type="radio" name="В каком месяце необходимо запустить систему в работу" value="другое" class="t-radio js-tilda-rule" data-tilda-req="1" aria-required="true"><div class="t-radio__indicator" style="border-color:#76b82a"></div>другое</label>
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+                <div class="d-btn">
+                  <button class="button popup_calc_btns popup_calc_button-end-2">Назад</button>
+                  <button class="button popup_calc_btns popup_calc_profile_button-2 popup_calc_button-next-2">Далее</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="popup_calc_five" data-modal>
+      <div class="popup_dialog">
+          <div class="popup_calc_profile_content popup_content text-center">
+            <button type="button" class="popup_calc_end_close-five"><strong>&times;</strong></button>
+            <div class="t862__quiz-description-block" style="background-color: #252c35;">
+              <div class="t-descr t-descr_xxs t862__quiz-description">
+                <div class="t862__quiz-description-title">
+                  <svg role="presentation" viewBox="0 0 100 100" style="stroke:#76b82a;">
+                    <rect x="27.5" y="4.1" class="st61" width="56.5" height="73.5"></rect>
+                    <line class="st61" x1="41.5" y1="22.1" x2="70.6" y2="22.1"></line>
+                    <line class="st61" x1="41.5" y1="38.8" x2="70.6" y2="38.8"></line>
+                    <line class="st61" x1="41.5" y1="55.5" x2="70.6" y2="55.5"></line>
+                    <polyline class="st61" points="66.4,77.6 66.4,95.6 9.8,95.6 9.8,22.1 27.5,22.1 "></polyline>
+                  </svg>
+                  <span class="t862__quiz-description-text" field="descr">
+                    <div style="font-size:20px;color:#ffffff;">
+                      <strong>Ответьте на 5 простых вопросов, которые помогут нам составить точную смету для Вашего объекта.</strong><br>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="t862__quiz-form-wrapper t862__quiz-form-wrapper_newcapturecondition">
+              <div class="t-form__inputsbox">
+                <div class="t862__screen-wrapper t-step-form__step t-step-form__step_active">
+                  <div class="t-input-group t-input-group_ta">
+                    <label  class="t-input-title t-descr t-descr_md" style="color:#252c35;font-weight:700;">Месторасположение объекта?</label>
+                    <div class="t-input-block">
+                      <textarea name="Месторасположение объекта" id="input_1534435353530" class="t-input js-tilda-rule t-input_bbonly" placeholder="Город, район, улица" style="color:#252c35; border:1px solid #252c35; background-color:#f3f2f1; height:34px;" rows="1"></textarea> 
+                      <div class="t-input-error" aria-live="polite" id="error_1534435353530"></div>
+                  </div>
+                </div>
+                <div class="d-btn">
+                  <button class="button popup_calc_btns popup_calc_button-end-3">Назад</button>
+                  <button class="button popup_calc_btns popup_calc_profile_button-6 popup_calc_button-next-2">Далее</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="t824__popup-container" data-close style="background-color: rgb(243, 242, 241);" data-appearoffset="500px">
