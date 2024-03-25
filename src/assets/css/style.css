@@ -1853,7 +1853,9 @@ F
 /*Modals*/
 .popup,
 .popup_engineer,
-.popup_calc_end {
+.popup_calc_end,
+.popup_calc_four,
+.popup_calc_five {
   display: none;
   position: fixed;
   top: 0;
@@ -1902,7 +1904,9 @@ F
 
 .popup_close,
 .popup_engineer_close,
-.popup_calc_end_close {
+.popup_calc_end_close,
+.popup_calc_end_close-four,
+.popup_calc_end_close-five {
   position: absolute;
   top: -2.2rem;
   right: -5rem;
@@ -2119,6 +2123,17 @@ F
   margin-top: 1rem;
   padding: 1rem 5rem;
 }
+
+.popup_calc_btnss {
+    display: block;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-top: 1rem;
+    padding: 1rem 5rem;
+}
+
+
 
 /*Media*/
 @media (max-width: 1400px) {
