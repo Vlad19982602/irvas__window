@@ -1,7 +1,13 @@
 "use strict";
 
 const express = require('express');
+
 const app = express();
+
+const PORT = 8080
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`)
+})
 
 let people = [
     {
@@ -27,9 +33,4 @@ let people = [
 
   app.get('/api/people', (request, response) => {
       response.json(people)
-  })
-
-  const PORT = 3001
-  app.listen(PORT, () => {
-      console.log(`Server running on port ${PORT}`)
   })
