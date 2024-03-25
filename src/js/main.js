@@ -7,6 +7,7 @@ import timer from "./modules/timer";
 import images from "./modules/images";
 import animation from "./modules/animations";
 import scrolling from "./modules/scrolling";
+import timeId from "./modules/setTimeOut";
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -23,6 +24,6 @@ window.addEventListener('DOMContentLoaded', () => {
     images();
     animation();
     scrolling(".btnup");
-    scrolling('.t824__popup-container');
+    timeId('.t824__popup-container');
     
 });
