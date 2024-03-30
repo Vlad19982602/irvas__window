@@ -18,7 +18,7 @@ const animation = () => {
                 if((scrollY > animItemOffset - animItemPoint) && scrollY < (animItemOffset + animItemHeight )) {
                     animItem.classList.add('active');
                 } else {
-                    if(animItem) {
+                    if(!animItem.classList.contains('_anim-no-hide')) {
                         animItem.classList.remove('active');
                     }
                 }
